@@ -29,7 +29,7 @@ export default {
       this.message = "최근 글 3개를 분석하고 있습니다."
       await axios({
         method: "GET",
-        url:"http://3.17.75.87:8000/search/"+this.id, 
+        url:"http://192.168.0.82:8000/search/"+this.id, 
         responseType: 'arraybuffer',
       })
       .then((res)=>{
